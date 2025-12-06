@@ -69,5 +69,3 @@ A full-stack Retail Sales Management System built for the TrueState SDE Intern A
    ```
    App runs on `http://localhost:5173`.
 
-## Documentation
-See [docs/architecture.md](docs/architecture.md) for detailed architecture.
