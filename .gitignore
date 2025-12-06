@@ -1,0 +1,12 @@
+# Root .gitignore
+node_modules/
+.DS_Store
+dist/
+build/
+.env
+
+# Large files
+backend/database.sqlite
+truestate_assignment_dataset.csv
+*.sqlite
+*.csv
