@@ -5,6 +5,13 @@ const db = require('../src/utils/db');
 
 const csvFilePath = path.resolve(__dirname, '../../truestate_assignment_dataset.csv');
 
+// Check if CSV file exists
+if (!fs.existsSync(csvFilePath)) {
+    console.log('CSV file not found at:', csvFilePath);
+    console.log('Skipping data import. Database will be empty.');
+    process.exit(0);
+}
+
 // Wait for table creation (simple delay, or better use promise in db.js, but for script this is fine)
 setTimeout(() => {
     console.log("Starting data import...");

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "build": "node scripts/importData.js || echo 'Database already initialized or CSV file not found'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
